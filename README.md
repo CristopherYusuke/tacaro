@@ -1,6 +1,3 @@
-# tacaro
-tacaro is a application that you can compare country price tag of product / service based in minimum salary 
-
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
