@@ -1,21 +1,14 @@
-import React, { useState } from 'react';
+import React from 'react';
 import './App.sass';
-import SideMenu from './component/side-menu';
+import Setting from './component/setting';
 
 function App() {
-  const [hideMenu, setHideMenu] = useState(true);
-
   return (
     <>
       <header>
-        <button type="button" className="button" onClick={() => setHideMenu(!hideMenu)}>
-          <i className="fas fa-bars fa-lg" />
-        </button>
         ta caro
       </header>
-      { hideMenu && (
-        <SideMenu />
-      )}
+      <Setting />
     </>
   );
 }
