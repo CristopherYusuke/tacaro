@@ -1,4 +1,3 @@
-import { CHANGE_MINIMUM_SALARY, CHANGE_MINIMUM_SALARY } from "../action/type";
 
 const INITIAL_STATE = {
   countryFrom: {

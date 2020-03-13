@@ -5,13 +5,13 @@ export default function SideMenu() {
   return (
     <aside className="menu">
       <p className="menu-label">
-          nada a teste
+        nada a teste
       </p>
       <ul className="menu-list">
         <li> asdf </li>
       </ul>
       <p className="menu-label">
-          teste
+        teste
       </p>
     </aside>
   );
