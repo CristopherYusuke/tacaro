@@ -1,14 +1,14 @@
-import React, { useState } from 'react';
-import { useSelector, useDispatch } from 'react-redux';
+import React, { useState, useCallback, memo } from 'react';
+import { useSelector } from 'react-redux';
 
-export default function Setting() {
+function Setting() {
   const [YourSalary, setYourSalary] = useState(0);
   const [MinimumSalary, setMinimumSalary] = useState(0);
   const [Currency, setCurrency] = useState(0);
 
-  const handle = (handleCallBack) => (e) => {
+  const handle = useCallback((handleCallBack) => (e) => {
     handleCallBack(e.target.value);
-  };
+  }, []);
 
   const countryFrom = useSelector((state) => state.countryFrom);
   console.log(countryFrom);
@@ -33,3 +33,6 @@ export default function Setting() {
     </form>
   );
 }
+
+
+export default memo(Setting);
