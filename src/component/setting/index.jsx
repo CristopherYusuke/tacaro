@@ -1,5 +1,4 @@
 import React, { useState, useCallback, memo } from 'react';
-import { useSelector } from 'react-redux';
 
 function Setting() {
   const [YourSalary, setYourSalary] = useState(0);
@@ -9,9 +8,6 @@ function Setting() {
   const handle = useCallback((handleCallBack) => (e) => {
     handleCallBack(e.target.value);
   }, []);
-
-  const countryFrom = useSelector((state) => state.countryFrom);
-  console.log(countryFrom);
 
   return (
     <form>
